@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ description or 'Computer Science Theory at the University of Iowa.' | escape }}">
+    <title>{{ title or "CS Theory @ UIowa" | escape }}{% if not homepage %} · CS Theory @ UIowa{% endif %}</title>
+    <script>(function(){try{if(localStorage.getItem('cs-theory-theme')==='light')document.documentElement.dataset.theme='light';}catch(e){}})();</script>
+    <link rel="icon" type="image/x-icon" href="./assets/iowa-favicon.ico">
+    <link rel="stylesheet" href="{{ 'assets/style.css' | assetVersion }}">
+    <script src="{{ 'assets/navigation.js' | assetVersion }}" defer></script>
+    <script src="{{ 'assets/content-loader.js' | assetVersion }}" defer></script>
+  </head>
+  <body class="{% if homepage %}homepage{% else %}interior-page{% endif %}">
+    <a class="skip-link" href="#main">Skip to content</a>
+{% if not homepage %}{% include "header.njk" %}{% endif %}
+    {{ content | safe }}
+    {% include "footer.njk" %}
+    <p class="navigation-notice" role="status" aria-live="polite"></p>
+  </body>
+</html>

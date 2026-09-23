@@ -1,0 +1,46 @@
+---
+layout: base.njk
+title: CS Theory @ UIowa
+description: Our research focuses on the theoretical aspects of computation across a range of topics in theoretical computer science.
+homepage: true
+---
+<main id="main">
+  <div class="hero">
+    <img class="hero-image" src="./assets/uiowa-pentacrest.jpg" alt="A panoramic view of the University of Iowa Pentacrest with the golden dome of Old Capitol beneath a cloud-filled sky" fetchpriority="high" width="1312" height="738">
+    <div class="hero-shade" aria-hidden="true"></div>
+    {% include "header.njk" %}
+    <div class="hero-content">
+      <section class="hero-caption" aria-labelledby="hero-title">
+        <h1 id="hero-title">CS Theory @ UIowa</h1>
+        <p class="theory-intro">Our research focuses on the theoretical aspects of computation. We work across a range of topics in theoretical computer science.</p>
+        <ul class="research-areas" aria-label="Research areas">
+          <li>Algorithms &amp; distributed systems</li>
+          <li>Computational geometry &amp; optimization</li>
+          <li>Pseudorandomness &amp; property testing</li>
+          <li>Learning &amp; stochastic systems</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <div class="homepage-activities">
+    <p class="reading-group"><a href="./reading-group.html">{{ readingGroup.title | escape }}</a>. {{ readingGroup.location | escape }}, {{ readingGroup.schedule | escape }}</p>
+    <section class="activity-section" id="upcoming-events" aria-labelledby="upcoming-title">
+      <h2 class="ruled-heading" id="upcoming-title">Upcoming events</h2>
+      <div class="activity-list full">
+        {% for item in events.upcoming %}{% include "activity-row.njk" %}{% else %}<p class="empty-events">No upcoming events are currently scheduled.</p>{% endfor %}
+      </div>
+    </section>
+    <section class="activity-section" id="recent-events" aria-labelledby="recent-title">
+      <div class="section-heading">
+        <h2 id="recent-title">News and events</h2>
+      </div>
+      <div class="activity-list" id="past-events-list">
+        {% for item in events.past %}{% include "activity-row.njk" %}{% else %}<p class="empty-events">No past news or events to show.</p>{% endfor %}
+      </div>
+      <div class="archive-footer" hidden>
+        <p id="archive-status" class="visually-hidden" role="status" aria-live="polite"></p>
+        <button id="show-more" type="button" aria-controls="past-events-list" hidden>Show more</button>
+      </div>
+    </section>
+  </div>
+</main>

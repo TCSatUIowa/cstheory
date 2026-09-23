@@ -1,0 +1,62 @@
+---
+layout: base.njk
+title: People
+description: Faculty, current students, and alumni of the University of Iowa CS Theory group.
+section: people
+permalink: /people.html
+---
+<main id="main" class="people-page people-directory">
+  <header class="people-heading">
+    <h1>People</h1>
+    <nav class="page-sections" aria-label="People page sections"><a href="#faculty">Faculty</a><a href="#current-students">Current students</a><a href="#alumni">Alumni</a></nav>
+  </header>
+  <section id="faculty" aria-labelledby="faculty-title">
+    <h2 class="people-section-title" id="faculty-title">Faculty</h2>
+    <p class="people-order-note">Listed alphabetically by last name.</p>
+  <div class="faculty-list">
+    {% for person in people.faculty %}
+    <article class="faculty-entry" id="{{ person.id }}">
+      {% if person.website %}<a class="faculty-card" href="{{ person.website | escape }}">{% else %}<div class="faculty-card">{% endif %}
+        <div class="person-portrait">{% include "portrait.njk" %}</div>
+        <h3>{{ person.name | escape }}</h3>
+      {% if person.website %}</a>{% else %}</div>{% endif %}
+      {% if person.research %}<p class="faculty-research">{{ person.research | escape }}</p>{% endif %}
+    </article>
+    {% else %}<p class="empty-events">Faculty information will be added soon.</p>{% endfor %}
+  </div>
+  </section>
+  <section id="current-students" aria-labelledby="current-title">
+    <h2 class="people-section-title" id="current-title">Current students</h2>
+    <p class="people-order-note">Listed alphabetically by last name.</p>
+    <div class="student-list">
+      {% for person in people.students %}
+      <article class="student-entry">
+        {% if person.website %}<a class="student-card" href="{{ person.website | escape }}">{% else %}<div class="student-card">{% endif %}
+        <div class="person-portrait">{% include "portrait.njk" %}</div>
+        <h3>{{ person.name | escape }}</h3>
+        {% if person.website %}</a>{% else %}</div>{% endif %}
+        <div class="person-info">
+          <p class="person-advisor">Advisor: {% if person.advisorLink %}<a href="{{ person.advisorLink | siteRelative | escape }}">{{ person.advisor | escape }}</a>{% else %}{{ person.advisor | escape }}{% endif %}</p>
+          {% if person.research %}<p class="person-research">{{ person.research | escape }}</p>{% endif %}
+        </div>
+      </article>
+      {% else %}<p class="empty-events">Current student information will be added soon.</p>{% endfor %}
+    </div>
+  </section>
+  <section id="alumni" aria-labelledby="alumni-title">
+    <h2 class="people-section-title" id="alumni-title">Alumni</h2>
+    <p class="section-note">Former students are listed by graduation year, with their advisor and an optional destination or current role.</p>
+    <div class="alumni-list">
+      {% for person in people.alumni %}
+      <article class="alumni-entry">
+        <div class="alumni-main">
+          {% if person.website %}<a class="alumni-name" href="{{ person.website | escape }}">{{ person.name | escape }}</a>{% else %}<span class="alumni-name">{{ person.name | escape }}</span>{% endif %}
+          <span class="alumni-year">{{ person.year or '—' }}</span>
+          <span class="alumni-advisor">Advisor: {% if person.advisorLink %}<a href="{{ person.advisorLink | siteRelative | escape }}">{{ person.advisor | escape }}</a>{% else %}{{ person.advisor | escape }}{% endif %}</span>
+        </div>
+        {% if person.current %}<p class="alumni-current">→ {{ person.current | escape }}</p>{% endif %}
+      </article>
+      {% else %}<p class="empty-events">Alumni information will be added soon.</p>{% endfor %}
+    </div>
+  </section>
+</main>

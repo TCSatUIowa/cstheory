@@ -1,0 +1,15 @@
+    <header class="site-header">
+{% if not homepage %}      <a class="site-name" href="./" aria-label="CS Theory at UIowa home">{% include "petersen-graph.njk" %}<span>CS Theory @ UIowa</span></a>{% endif %}
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" hidden>Menu</button>
+      <nav class="site-navigation" id="main-navigation" aria-label="Main navigation">
+        <a href="./people.html"{% if section == 'people' %} aria-current="page"{% endif %}>People</a>
+        <a href="./publications.html"{% if section == 'publications' %} aria-current="page"{% endif %}>Publications</a>
+        <a href="./reading-group.html"{% if section == 'reading-group' %} aria-current="page"{% endif %}>Reading group</a>
+        <span class="navigation-divider" aria-hidden="true">|</span>
+        <a class="department-link" href="https://cs.uiowa.edu/">Dept of CS</a>
+        <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+          <span class="theme-toggle-track" aria-hidden="true"><span>0</span><span>1</span><span class="theme-toggle-thumb"></span></span>
+          <span class="theme-toggle-label">Dark mode</span>
+        </button>
+      </nav>
+    </header>

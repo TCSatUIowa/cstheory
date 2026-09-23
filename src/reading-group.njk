@@ -1,0 +1,40 @@
+---
+layout: base.njk
+title: Algorithms Reading Group
+description: Papers and discussions in algorithms and theoretical computer science at the University of Iowa.
+section: reading-group
+permalink: /reading-group.html
+---
+<main id="main" class="people-page reading-group-page">
+  <header class="group-heading">
+    <p class="group-eyebrow">CS Theory @ UIowa</p>
+    <h1>{{ readingGroup.title | escape }}</h1>
+    <p class="group-description">{{ readingGroup.description | escape }}</p>
+    <p class="group-schedule"><span>{{ readingGroup.schedule | escape }}</span><span>{{ readingGroup.location | escape }}</span></p>
+    {% if readingGroup.theme %}<p class="group-theme">{{ readingGroup.theme | escape }}</p>{% endif %}
+  </header>
+  <div class="reading-group-layout">
+    <div>
+      <section class="activity-section" aria-labelledby="upcoming-talks">
+        <p class="group-semester">{{ readingGroup.currentSemester }}</p>
+        <h2 class="ruled-heading" id="upcoming-talks">Upcoming talks</h2>
+        <div class="talk-list">
+          {% for item in readingGroup.upcoming %}{% include "reading-group-row.njk" %}{% else %}<p class="empty-events">The next talk will be announced here.</p>{% endfor %}
+        </div>
+      </section>
+      <section class="activity-section" aria-labelledby="semester-talks">
+        <h2 class="ruled-heading" id="semester-talks">This semester</h2>
+        <div class="talk-list">
+          {% for item in readingGroup.currentTalks %}{% include "reading-group-row.njk" %}{% else %}<p class="empty-events">Completed talks from {{ readingGroup.currentSemester }} will appear here.</p>{% endfor %}
+        </div>
+      </section>
+    </div>
+    <aside class="reading-group-sidebar" aria-labelledby="past-talks-heading">
+      <h2 id="past-talks-heading">Past events</h2>
+      <nav aria-label="Past reading-group events">
+        <a href="./reading-group-archive.html">All past talks</a>
+        {% for group in readingGroup.pastSemesters %}<a href="./reading-group-archive.html#{{ group.id }}">{{ group.label }}</a>{% endfor %}
+      </nav>
+    </aside>
+  </div>
+</main>

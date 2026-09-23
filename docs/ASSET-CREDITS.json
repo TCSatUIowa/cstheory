@@ -1,0 +1,88 @@
+[
+  {
+    "asset": "src/assets/uiowa-pentacrest.jpg",
+    "source": "https://imu.uiowa.edu/outdoor-and-campus-spaces/pentacrest",
+    "image": "https://imu.uiowa.edu/sites/imu.uiowa.edu/files/styles/widescreen__1312_x_738/public/2022-06/pentacrest-1.jpg?h=92704f59&itok=ppB4grqL",
+    "credit": "University of Iowa, Iowa Memorial Union",
+    "note": "Homepage banner. Photographer not identified on the source page."
+  },
+  {
+    "asset": "src/assets/maclean-hall.jpg",
+    "source": "User-provided 0023.jpg",
+    "note": "Supplied by the user for the homepage banner; photographer not specified."
+  },
+  {
+    "name": "sourya-roy",
+    "file": "src/assets/people/sourya-roy.jpg",
+    "page": "https://cs.uiowa.edu/people/sourya-roy",
+    "image": "https://cs.uiowa.edu/sites/cs.uiowa.edu/files/2023-08/SouryaRoy.jpg",
+    "source_alt": "Sourya Roy portrait - submitted",
+    "rights": "No explicit reuse license found on faculty page. Published by University of Iowa Computer Science."
+  },
+  {
+    "name": "mehrdad-moharrami",
+    "file": "src/assets/people/mehrdad-moharrami.jpg",
+    "page": "https://cs.uiowa.edu/people/mehrdad-moharrami",
+    "image": "https://cs.uiowa.edu/sites/cs.uiowa.edu/files/2024-08/2024_08_02-Mehrdad%20Moharrami-tschoon-002_0.jpg",
+    "source_alt": "Mohammed Moharrami portrait in front of Old Capitol Building - Photo Credit: MBiger",
+    "rights": "No explicit reuse license found on faculty page. Published by University of Iowa Computer Science.",
+    "embedded_usage_terms": "This image is the property of The University of Iowa and is protected under USA and International copyright laws. Copying, duplicating, saving as a digital file, printing, publishing in any form of media including web, manipulating, transmitting, or reproducing without the prior written permission of The University of Iowa is strictly forbidden and would constitute a breach of copyright.",
+    "embedded_credit": "Tim Schoon - Staff Photographer - The University of Iowa",
+    "embedded_creator": "Tim Schoon",
+    "credit_note": "Embedded metadata credits Tim Schoon / University of Iowa; the profile alt appears stale or erroneous, referring to MBiger and an outdoor setting although the actual image is a studio portrait."
+  },
+  {
+    "name": "kasturi-varadarajan",
+    "file": "src/assets/people/kasturi-varadarajan.jpg",
+    "page": "https://cs.uiowa.edu/people/kasturi-varadarajan",
+    "image": "https://cs.uiowa.edu/sites/cs.uiowa.edu/files/2021-06/kasturi_varadarajan.jpg",
+    "source_alt": "Kasturi Varadarajan",
+    "rights": "No explicit reuse license found on faculty page. Published by University of Iowa Computer Science."
+  },
+  {
+    "name": "sriram-pemmaraju",
+    "file": "src/assets/people/sriram-pemmaraju.jpg",
+    "page": "https://cs.uiowa.edu/people/sriram-pemmaraju",
+    "image": "https://cs.uiowa.edu/sites/cs.uiowa.edu/files/2021-03/sriram_pemmaraju.jpg",
+    "source_alt": "Sriram Pemmaraju",
+    "rights": "No explicit reuse license found on faculty page. Published by University of Iowa Computer Science."
+  },
+  {
+    "name": "haakon-larsen",
+    "file": "src/assets/people/haakon-larsen.jpg",
+    "page": "https://cs.uiowa.edu/people/haakon-larsen",
+    "image": "https://cs.uiowa.edu/sites/cs.uiowa.edu/files/2021-09/Haakon_Larsen.jpg",
+    "source_alt": "Haakon Larsen portrait",
+    "rights": "No explicit reuse license found on profile page. Published by University of Iowa Computer Science."
+  },
+  {
+    "name": "hongyan-ji",
+    "file": "src/assets/people/hongyan-ji.jpg",
+    "page": "https://cs.uiowa.edu/people/hongyan-ji",
+    "image": "https://cs.uiowa.edu/sites/cs.uiowa.edu/files/2024-09/HongyanJi.jpg",
+    "source_alt": "Hongyan Ji portrait",
+    "rights": "No explicit reuse license found on profile page. Published by University of Iowa Computer Science."
+  },
+  {
+    "name": "jeffrey-keithley",
+    "file": "src/assets/people/jeffrey-keithley.jpg",
+    "page": "https://cs.uiowa.edu/people/jeffrey-keithley",
+    "image": "https://cs.uiowa.edu/sites/cs.uiowa.edu/files/2021-08/jeff_keithley_profile.jpg",
+    "source_alt": "Jeffrey Keithley portrait",
+    "rights": "No explicit reuse license found on profile page. Published by University of Iowa Computer Science."
+  },
+  {
+    "name": "xiang-liu",
+    "file": "src/assets/people/xiang-liu.jpg",
+    "page": "https://cs.uiowa.edu/people/xiang-liu",
+    "image": "https://cs.uiowa.edu/sites/cs.uiowa.edu/files/2021-08/Xiang_Liu.jpg",
+    "source_alt": "Xiang Liu portrait",
+    "rights": "No explicit reuse license found on profile page. Published by University of Iowa Computer Science."
+  },
+  {
+    "asset": "src/assets/iowa-favicon.ico",
+    "source": "https://cs.uiowa.edu/profiles/custom/sitenow/assets/favicon.ico",
+    "credit": "University of Iowa, official block-I favicon",
+    "note": "Used unchanged at the user’s request."
+  }
+]

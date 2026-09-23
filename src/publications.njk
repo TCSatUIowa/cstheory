@@ -1,0 +1,30 @@
+---
+layout: base.njk
+title: Publications
+description: Publications by the University of Iowa CS Theory group.
+section: publications
+permalink: /publications.html
+---
+<main id="main" class="people-page publications-page">
+  <header class="people-heading">
+    <h1>Publications</h1>
+  </header>
+  <div class="publication-years">
+    {% for group in publications.years %}
+    <section class="publication-year" aria-labelledby="year-{{ group.year }}">
+      <h2 id="year-{{ group.year }}">{{ group.year }}</h2>
+      <ul class="publication-list">
+        {% for item in group.entries %}
+        <li class="publication-entry">
+          <h3>{% if item.link %}<a href="{{ item.link | escape }}">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</h3>
+          <p class="publication-authors">{{ item.authors | escape }}</p>
+          <p class="publication-meta">{{ item.venue | escape }}{% if item.status %}<span class="publication-status">{{ item.status | escape }}</span>{% endif %}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% else %}
+    <p class="empty-events">Publication information will be added soon.</p>
+    {% endfor %}
+  </div>
+</main>

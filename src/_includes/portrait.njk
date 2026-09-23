@@ -1,0 +1,5 @@
+{% if person.image %}
+  <img class="person-photo" data-person="{{ person.id }}" src="{{ person.image | siteRelative | escape }}" alt="Portrait of {{ person.name | escape }}" width="220" height="275" loading="lazy">
+{% else %}
+  <span class="person-initials" aria-hidden="true">{{ person.initials }}</span>
+{% endif %}

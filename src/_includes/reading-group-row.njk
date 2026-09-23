@@ -1,0 +1,13 @@
+<article class="talk-row">
+  <time datetime="{{ item.date }}">{{ item.date | dateLabel }}</time>
+  <div class="talk-content">
+    <h3>{% if item.link %}<a href="{{ item.link | escape }}">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</h3>
+    <p class="talk-speaker">{{ item.speaker | escape }}{% if item.slides %} · <a href="{{ item.slides | escape }}">Slides</a>{% endif %}</p>
+    {% if item.abstract %}
+    <details class="talk-abstract">
+      <summary>Abstract<span class="visually-hidden"> for {{ item.title | escape }}</span></summary>
+      <div class="abstract-content">{{ item.abstractHtml | safe }}</div>
+    </details>
+    {% endif %}
+  </div>
+</article>

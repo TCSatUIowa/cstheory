@@ -1,0 +1,27 @@
+---
+layout: base.njk
+title: Reading-group archive
+description: Past Algorithms Reading Group talks at the University of Iowa.
+section: reading-group
+permalink: /reading-group-archive.html
+---
+<main id="main" class="people-page reading-group-page">
+  <header class="group-heading">
+    <a class="group-back" href="./reading-group.html">← Algorithms Reading Group</a>
+    <h1>Past talks</h1>
+    <nav class="semester-navigation" aria-label="Jump to semester">
+      {% for group in readingGroup.semesters %}<a href="#{{ group.id }}">{{ group.label }}</a>{% endfor %}
+    </nav>
+  </header>
+  <div id="reading-group-archive-list">
+    {%- for group in readingGroup.semesters %}
+    <section class="activity-section" aria-labelledby="{{ group.id }}">
+      <h2 class="ruled-heading" id="{{ group.id }}">{{ group.label }}</h2>
+      {% if group.theme %}<p class="semester-theme">{{ group.theme | escape }}</p>{% endif %}
+      <div class="talk-list">
+        {% for item in group.entries %}{% include "reading-group-row.njk" %}{% endfor %}
+      </div>
+    </section>
+    {%- else %}<p class="empty-events">Past talks will appear here.</p>{%- endfor %}
+  </div>
+</main>

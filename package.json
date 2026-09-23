@@ -1,0 +1,20 @@
+{
+  "name": "iowa-cs-theory",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A Markdown-based, fully static website for the University of Iowa CS Theory group.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node node_modules/@11ty/eleventy/cmd.cjs",
+    "postbuild": "node scripts/prepare-pages.mjs",
+    "dev": "node node_modules/@11ty/eleventy/cmd.cjs --serve --watch --port=4173"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.6",
+    "katex": "^0.18.7",
+    "markdown-it": "^15.0.2"
+  }
+}

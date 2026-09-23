@@ -1,0 +1,4 @@
+<article>
+  <time datetime="{{ item.date | isoDate }}">{{ item.date | dateLabel }}</time>
+  <div><span class="kind">{{ item.type | escape }}</span><h3><a href="{{ item.link | escape }}">{{ item.title | escape }}</a></h3>{% if item.authors %}<p>{{ item.authors | escape }}</p>{% elif item.speaker %}<p>{{ item.speaker | escape }}</p>{% endif %}</div>
+</article>
