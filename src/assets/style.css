@@ -255,7 +255,7 @@ h1 { margin: 0; font: 600 clamp(2rem, 3.3vw, 3rem)/1.08 var(--serif); letter-spa
 .faculty-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 40px 36px; }
 .faculty-entry { min-width: 0; scroll-margin-top: 24px; }
 .faculty-card { display: block; color: var(--ink); text-decoration: none; }
-.faculty-card .person-portrait, .student-card .person-portrait { width: min(100%, 220px); height: auto; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 4px; background: transparent; }
+.faculty-card .person-portrait, .student-card .person-portrait, .alumni-card .person-portrait { width: min(100%, 220px); height: auto; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 4px; background: transparent; }
 .faculty-card:hover h3 { text-decoration: underline; text-underline-offset: 4px; }
 .faculty-card h3 { margin: 10px 0 0; color: var(--link); font: 700 1.1rem/1.35 var(--sans); letter-spacing: -.02em; }
 .faculty-research { max-width: 245px; margin: 7px 0 0; color: var(--muted); font-size: .91rem; line-height: 1.5; }
@@ -287,6 +287,15 @@ h1 { margin: 0; font: 600 clamp(2rem, 3.3vw, 3rem)/1.08 var(--serif); letter-spa
 .student-entry .person-advisor, .student-entry .person-research { font-size: .96rem; line-height: 1.5; }
 .student-entry .person-research { margin-top: 6px; }
 .section-note { margin: -4px 0 18px; color: var(--muted); font-size: .95rem; line-height: 1.55; }
+.alumni-profile-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 40px 36px; }
+.alumni-profile { min-width: 0; }
+.alumni-card { display: block; color: var(--ink); text-decoration: none; }
+.alumni-card:hover h3 { text-decoration: underline; text-underline-offset: 4px; }
+.alumni-card h3 { margin: 10px 0 0; color: var(--link); font: 700 1.1rem/1.35 var(--sans); letter-spacing: -.02em; }
+.alumni-profile .person-info { margin-top: 5px; }
+.alumni-profile-year { margin: 3px 0; color: var(--gold-strong); font-size: .82rem; font-weight: 750; letter-spacing: .06em; line-height: 1.5; }
+.alumni-profile .person-advisor { font-size: .9rem; }
+.alumni-profile-current { margin: 6px 0 0; color: var(--muted); font-size: .9rem; line-height: 1.5; }
 .alumni-list { display: grid; gap: 4px; }
 .alumni-entry { display: grid; grid-template-columns: minmax(0, 1fr) minmax(230px, .75fr); gap: 24px; align-items: baseline; padding: 14px 16px; border-radius: 6px; background: var(--surface-soft); }
 .alumni-entry:nth-child(even) { background: var(--surface); }
@@ -298,6 +307,9 @@ h1 { margin: 0; font: 600 clamp(2rem, 3.3vw, 3rem)/1.08 var(--serif); letter-spa
 .alumni-advisor a { color: var(--link); text-decoration: none; }
 .alumni-advisor a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .alumni-current { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.5; }
+.archive-link { margin: 28px 0 0; }
+.archive-link a { color: var(--link); font-weight: 650; text-decoration: none; }
+.archive-link a:hover { text-decoration: underline; text-underline-offset: 4px; }
 
 /* Publications use a readable year rail and compact bibliography rows. */
 .publications-page .section-note code { padding: 2px 5px; border-radius: 4px; background: var(--surface-soft); color: var(--ink); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .88em; }
@@ -319,6 +331,7 @@ h1 { margin: 0; font: 600 clamp(2rem, 3.3vw, 3rem)/1.08 var(--serif); letter-spa
 @media (max-width: 1000px) {
   .faculty-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .student-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .alumni-profile-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .alumni-entry { grid-template-columns: 1fr; gap: 8px; }
 }
 @media (max-width: 850px) {
@@ -352,13 +365,13 @@ h1 { margin: 0; font: 600 clamp(2rem, 3.3vw, 3rem)/1.08 var(--serif); letter-spa
   .page-sections { flex-wrap: wrap; gap: 6px 18px; }
   .page-sections a { display: inline-flex; align-items: center; min-height: 44px; }
   .people-directory > section + section { margin-top: 36px; }
-  .faculty-list, .student-list { grid-template-columns: minmax(0, 1fr); gap: 32px; }
-  .faculty-entry, .student-entry { position: relative; min-height: 112px; padding-left: 108px; overflow-wrap: anywhere; }
-  .faculty-card .person-portrait, .student-card .person-portrait { position: absolute; left: 0; top: 0; width: 92px; height: 115px; aspect-ratio: 4 / 5; }
-  .faculty-entry, .student-entry { min-height: 115px; }
-  .faculty-card h3, .student-card h3 { margin: 0; font-size: 1.05rem; line-height: 1.4; }
+  .faculty-list, .student-list, .alumni-profile-list { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .faculty-entry, .student-entry, .alumni-profile { position: relative; min-height: 115px; padding-left: 108px; overflow-wrap: anywhere; }
+  .faculty-card .person-portrait, .student-card .person-portrait, .alumni-card .person-portrait { position: absolute; left: 0; top: 0; width: 92px; height: 115px; aspect-ratio: 4 / 5; }
+  .faculty-card h3, .student-card h3, .alumni-card h3 { margin: 0; font-size: 1.05rem; line-height: 1.4; }
   .faculty-research { max-width: none; font-size: .9rem; }
   .student-entry .person-advisor, .student-entry .person-research { font-size: .9rem; }
+  .alumni-profile .person-advisor, .alumni-profile-current { font-size: .88rem; }
   .alumni-entry { grid-template-columns: 1fr; gap: 6px; }
   .alumni-main { grid-template-columns: minmax(0, 1fr) 52px; gap: 6px 12px; }
   .alumni-advisor { grid-column: 1 / -1; }

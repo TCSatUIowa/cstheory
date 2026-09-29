@@ -1,0 +1,28 @@
+---
+layout: base.njk
+title: Older alumni
+description: Alumni of the University of Iowa CS Theory group who graduated before 2017.
+section: people
+permalink: /older-alumni.html
+---
+<main id="main" class="people-page older-alumni-page">
+  <header class="people-heading">
+    <div>
+      <a class="group-back" href="./people.html#alumni">← People</a>
+      <h1>Older alumni</h1>
+    </div>
+  </header>
+  <p class="section-note">Alumni who graduated before 2017, listed by graduation year.</p>
+  <div class="alumni-list" data-alumni-list data-layout="compact" data-year-max="2016">
+    {% for person in people.olderAlumni %}
+    <article class="alumni-entry">
+      <div class="alumni-main">
+        {% if person.website %}<a class="alumni-name" href="{{ person.website | escape }}">{{ person.name | escape }}</a>{% else %}<span class="alumni-name">{{ person.name | escape }}</span>{% endif %}
+        <span class="alumni-year">{{ person.year or '—' }}</span>
+        <span class="alumni-advisor">Advisor: {% if person.advisorLink %}<a href="{{ person.advisorLink | siteRelative | escape }}">{{ person.advisor | escape }}</a>{% else %}{{ person.advisor | escape }}{% endif %}</span>
+      </div>
+      {% if person.current %}<p class="alumni-current">→ {{ person.current | escape }}</p>{% endif %}
+    </article>
+    {% else %}<p class="empty-events">No older alumni to show.</p>{% endfor %}
+  </div>
+</main>

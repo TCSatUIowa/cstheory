@@ -1,10 +1,19 @@
 # Alumni
 
+name: Joshua Z. Sobel
+advisor: Sriram Pemmaraju
+year: 2026
+website: https://joshzsobel.com/
+current: Incoming Postdoctoral Researcher with Ami Paz · LISN, CNRS & Université Paris-Saclay
+
+---
+
 name: Hankyu Jang
 advisor: Sriram Pemmaraju
 year: 2023
 website: https://hankyujang.github.io/
 current: Applied Scientist · Amazon
+image: /assets/people/hankyu-jang.jpg
 
 ---
 
@@ -13,6 +22,7 @@ advisor: Sriram Pemmaraju
 year: 2021
 website: https://shreyaspai.com/
 current: Postdoctoral fellow · Aalto University → Assistant Professor · IIT Madras
+image: /assets/people/shreyas-pai.jpg
 
 ---
 
@@ -21,6 +31,7 @@ advisor: Kasturi Varadarajan
 year: 2020
 website: https://iitj.ac.in/People/Profile/02cb8d8a-d546-4de8-8a3e-7dfe304f0c0b?ln=en
 current: Postdoctoral researcher · University of Bergen → Assistant Professor · IIT Jodhpur
+image: /assets/people/tanmay-inamdar.jpg
 
 ---
 
@@ -29,6 +40,7 @@ advisor: Kasturi Varadarajan
 year: 2019
 website: https://sites.google.com/view/sayan-bandyapadhyay
 current: Postdoctoral researcher · University of Bergen → Assistant Professor · Portland State University
+image: /assets/people/sayan-bandyapadhyay.jpg
 
 ---
 
@@ -37,6 +49,7 @@ advisor: Sriram Pemmaraju
 year: 2019
 website: https://www.linkedin.com/in/talal-riaz
 current: Software Engineer · Yelp
+image: /assets/people/talal-riaz.png
 
 ---
 
@@ -45,6 +58,7 @@ advisor: Kasturi Varadarajan
 year: 2017
 website: https://cs.uiowa.edu/news/2025/07/santanu-bhowmick-phd-17-alumnus-qa
 current: Senior Software Engineer · Apple Maps
+image: /assets/people/santanu-bhowmick.jpg
 
 ---
 

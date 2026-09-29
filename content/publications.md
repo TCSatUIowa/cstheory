@@ -32,16 +32,25 @@ authors: Hongyan Ji; Shreyas Pai; Sriram V. Pemmaraju; Joshua Sobel
 venue: Theoretical Computer Science
 year: 2026
 link: https://doi.org/10.1016/j.tcs.2026.116238
-status: Accepted
+status: Published
 
 ---
 
 title: Improved Bounds for Distributed Random Walks and Spanning Trees
 authors: Gopal Pandurangan; Sriram V. Pemmaraju; Sourya Roy; Joshua Z. Sobel
-venue: Proceedings of the ACM Symposium on Principles of Distributed Computing
+venue: PODC 2026
 year: 2026
 link: https://doi.org/10.1145/3796701.3815944
 status: Published
+
+---
+
+title: Near-Optimal Online Metric Matching on Δ-ary HST
+authors: Parth Gor; Sourya Roy; Kasturi Varadarajan
+venue: arXiv
+year: 2026
+link: https://arxiv.org/abs/2609.25292
+status: Preprint
 
 ---
 
@@ -74,7 +83,7 @@ status: Published
 
 title: Real-time Cohorting of Nursing Care into Bubbles
 authors: Jeffrey Keithley; Tinh Tran; Lucas Zach-Ryan; D. M. Hasibul Hasan; Brodie McCuen; Sriram V. Pemmaraju; Bijaya Adhikari
-venue: Proceedings of the 25th International Conference on Autonomous Agents and Multiagent Systems
+venue: AAMAS 2026
 year: 2026
 link: https://doi.org/10.65109/glza7190
 status: Published
@@ -119,7 +128,7 @@ status: Published
 
 title: Conformal Edge-Weight Prediction in Latent Space
 authors: Akash Choudhuri; Yongjian Zhong; Mehrdad Moharrami; Christine Klymko; Mark Heimann; Jayaraman J. Thiagarajan; Bijaya Adhikari
-venue: Proceedings of the 2025 SIAM International Conference on Data Mining (SDM)
+venue: SDM 2025
 year: 2025
 link: https://doi.org/10.1137/1.9781611978520.15
 status: Published
@@ -128,7 +137,7 @@ status: Published
 
 title: Fast Deterministic Massively Parallel Ruling Sets Algorithms
 authors: Hongyan Ji; Kishore Kothapalli; Sriram V Pemmaraju; Ajitanshu Singh
-venue: Proceedings of the 26th International Conference on Distributed Computing and Networking
+venue: ICDCN 2025
 year: 2025
 link: https://doi.org/10.1145/3700838.3700872
 status: Published
@@ -137,7 +146,7 @@ status: Published
 
 title: Faster Set Cover in the MPC Model
 authors: Hongyan Ji; Shreyas Pai; Sriram Pemmaraju; Joshua Sobel
-venue: Proceedings of the 26th International Conference on Distributed Computing and Networking
+venue: ICDCN 2025
 year: 2025
 link: https://doi.org/10.1145/3700838.3700861
 status: Published
@@ -146,7 +155,7 @@ status: Published
 
 title: Message Optimality and Message-Time Trade-offs for APSP and Beyond
 authors: Fabien Dufoulon; Shreyas Pai; Gopal Pandurangan; Sriram Pemmaraju; Peter Robinson
-venue: Proceedings of the ACM Symposium on Principles of Distributed Computing
+venue: PODC 2025
 year: 2025
 link: https://doi.org/10.1145/3732772.3733506
 status: Published
@@ -155,7 +164,7 @@ status: Published
 
 title: Models and Algorithms for Balancing Efficiency and Equity in Vaccine Allocation
 authors: Jeffrey Keithley; Madeline Bonner; Sriram V. Pemmaraju
-venue: Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society
+venue: AIES 2025
 year: 2025
 link: https://doi.org/10.1609/aies.v8i2.36639
 status: Published
@@ -182,7 +191,7 @@ status: Published
 
 title: Real-Time Eeg-Based Epileptic Seizure Detection by One-Class Classification using CNN-LSTM and STFT
 authors: Erfan Mirzaei; Rahul Singh
-venue: 2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI)
+venue: ISBI 2025
 year: 2025
 link: https://doi.org/10.1109/isbi60581.2025.10981145
 status: Published
@@ -200,7 +209,7 @@ status: Published
 
 title: Sublinear-Time Sampling of Spanning Trees in the Congested Clique
 authors: Sriram V. Pemmaraju; Sourya Roy; Joshua Z. Sobel
-venue: Proceedings of the ACM Symposium on Principles of Distributed Computing
+venue: PODC 2025
 year: 2025
 link: https://doi.org/10.1145/3732772.3733510
 status: Published
@@ -218,7 +227,7 @@ status: Published
 
 title: A Stackelberg Game Model of Flocking
 authors: Chenlan Wang; Mehrdad Moharrami; Mingyan Liu
-venue: 2024 IEEE 63rd Conference on Decision and Control (CDC)
+venue: CDC 2024
 year: 2024
 link: https://doi.org/10.1109/cdc56724.2024.10885859
 status: Published
@@ -272,7 +281,7 @@ status: Published
 
 title: Towards Singular Optimality in the Presence of Local Initial Knowledge
 authors: Hongyan Ji; Sriram V. Pemmaraju
-venue: Structural Information and Communication Complexity
+venue: SIROCCO 2024
 year: 2024
 link: https://doi.org/10.1007/978-3-031-60603-8_17
 status: Published
@@ -281,7 +290,7 @@ status: Published
 
 title: Continually-Adaptive Representation Learning Framework for Time-Sensitive Healthcare Applications
 authors: Akash Choudhuri; Hankyu Jang; Alberto M. Segre; Philip M. Polgreen; Kishlay Jha; Bijaya Adhikari
-venue: Proceedings of the 32nd ACM International Conference on Information and Knowledge Management
+venue: CIKM 2023
 year: 2023
 link: https://doi.org/10.1145/3583780.3615464
 status: Published
@@ -290,7 +299,7 @@ status: Published
 
 title: Detecting Sources of Healthcare Associated Infections
 authors: Hankyu Jang; Andrew Fu; Jiaming Cui; Methun Kamruzzaman; B. Aditya Prakash; Anil Vullikanti; Bijaya Adhikari; Sriram V. Pemmaraju
-venue: Proceedings of the AAAI Conference on Artificial Intelligence
+venue: AAAI 2023
 year: 2023
 link: https://doi.org/10.1609/aaai.v37i4.25554
 status: Published
@@ -299,7 +308,7 @@ status: Published
 
 title: Exact Distributed Sampling
 authors: Sriram V. Pemmaraju; Joshua Z. Sobel
-venue: Structural Information and Communication Complexity
+venue: SIROCCO 2023
 year: 2023
 link: https://doi.org/10.1007/978-3-031-32733-9_25
 status: Published
@@ -317,7 +326,7 @@ status: Published
 
 title: Brief Announcement: Deterministic Massively Parallel Algorithms for Ruling Sets
 authors: Shreyas Pai; Sriram V. Pemmaraju
-venue: Proceedings of the 2022 ACM Symposium on Principles of Distributed Computing
+venue: PODC 2022
 year: 2022
 link: https://doi.org/10.1145/3519270.3538472
 status: Published
@@ -326,7 +335,7 @@ status: Published
 
 title: Dynamic Healthcare Embeddings for Improving Patient Care
 authors: Hankyu Jang; Sulyun Lee; D. M. Hasibul Hasan; Philip M. Polgreen; Sriram V. Pemmaraju; Bijaya Adhikari
-venue: 2022 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM)
+venue: ASONAM 2022
 year: 2022
 link: https://doi.org/10.1109/asonam55673.2022.10068627
 status: Published
@@ -335,7 +344,7 @@ status: Published
 
 title: Near-Optimal Spectral Disease Mitigation in Healthcare Facilities
 authors: Masahiro Kiji; D. M. Hasibul Hasan; Alberto M. Segre; Sriram V. Pemmaraju; Bijaya Adhikari
-venue: 2022 IEEE International Conference on Data Mining (ICDM)
+venue: ICDM 2022
 year: 2022
 link: https://doi.org/10.1109/icdm54844.2022.00121
 status: Published
@@ -362,7 +371,7 @@ status: Published
 
 title: Can We Break Symmetry with o(m) Communication?
 authors: Shreyas Pai; Gopal Pandurangan; Sriram V. Pemmaraju; Peter Robinson
-venue: Proceedings of the 2021 ACM Symposium on Principles of Distributed Computing
+venue: PODC 2021
 year: 2021
 link: https://doi.org/10.1145/3465084.3467909
 status: Published
@@ -389,7 +398,7 @@ status: Published
 
 title: Modeling and Evaluation of Clustering Patient Care into Bubbles
 authors: D. M. Hasibul Hasan; Alex Rohwer; Hankyu Jang; Ted Herman; Philip M. Polgreen; Daniel K. Sewell; Bijaya Adhikari; Sriram V. Pemmaraju
-venue: 2021 IEEE 9th International Conference on Healthcare Informatics (ICHI)
+venue: ICHI 2021
 year: 2021
 link: https://doi.org/10.1109/ichi52183.2021.00023
 status: Published
@@ -407,7 +416,7 @@ status: Published
 
 title: Risk-aware Temporal Cascade Reconstruction to Detect Asymptomatic Cases
 authors: Hankyu Jang; Shreyas Pai; Bijaya Adhikari; Sriram V. Pemmaraju
-venue: 2021 IEEE International Conference on Data Mining (ICDM)
+venue: ICDM 2021
 year: 2021
 link: https://doi.org/10.1109/icdm51629.2021.00034
 status: Published
@@ -416,7 +425,7 @@ status: Published
 
 title: A Data-driven Approach to Identifying Asymptomatic C. diff Cases
 authors: Hankyu Jang; Philip M. Polgreen; Alberto M. Segre; Daniel K. Sewell; Sriram V. Pemmaraju
-venue: epiDAMIK workshop at KDD 2020
+venue: epiDAMIK @ KDD 2020
 year: 2020
 link: https://hankyujang.github.io/files/paper/epiDAMIK20_asymptomatic_CDI_2stage_classifier.pdf
 status: Published
@@ -461,7 +470,7 @@ status: Published
 
 title: Distributed Approximation on Power Graphs
 authors: Reuven Bar-Yehuda; Keren Censor-Hillel; Yannic Maus; Shreyas Pai; Sriram V. Pemmaraju
-venue: Proceedings of the 39th Symposium on Principles of Distributed Computing
+venue: PODC 2020
 year: 2020
 link: https://doi.org/10.1145/3382734.3405750
 status: Published
@@ -497,7 +506,7 @@ status: Published
 
 title: Brief Announcement: Connectivity Lower Bounds in Broadcast Congested Clique
 authors: Shreyas Pai; Sriram V. Pemmaraju
-venue: Proceedings of the 2019 ACM Symposium on Principles of Distributed Computing
+venue: PODC 2019
 year: 2019
 link: https://doi.org/10.1145/3293611.3331569
 status: Published
@@ -506,7 +515,7 @@ status: Published
 
 title: Evaluating architectural changes to alter pathogen dynamics in a dialysis unit: for the CDC MInD-healthcare group
 authors: Hankyu Jang; Samuel Justice; Philip M. Polgreen; Alberto M. Segre; Daniel K. Sewell; Sriram V. Pemmaraju
-venue: Proceedings of the 2019 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining
+venue: ASONAM 2019
 year: 2019
 link: https://doi.org/10.1145/3341161.3343515
 status: Published
@@ -578,7 +587,7 @@ status: Published
 
 title: Near-Optimal Clustering in the k-machine model
 authors: Sayan Bandyapadhyay; Tanmay Inamdar; Shreyas Pai; Sriram V. Pemmaraju
-venue: Proceedings of the 19th International Conference on Distributed Computing and Networking
+venue: ICDCN 2018
 year: 2018
 link: https://doi.org/10.1145/3154273.3154317
 status: Published
@@ -587,7 +596,7 @@ status: Published
 
 title: Brief Announcement: Symmetry Breaking in the CONGEST Model: Time- and Message-Efficient Algorithms for Ruling Sets
 authors: Shreyas Pai; Gopal Pandurangan; Sriram V. Pemmaraju; Talal Riaz; Peter Robinson
-venue: Proceedings of the ACM Symposium on Principles of Distributed Computing
+venue: PODC 2017
 year: 2017
 link: https://doi.org/10.1145/3087801.3087865
 status: Published
@@ -596,7 +605,7 @@ status: Published
 
 title: Effectiveness of Local Search for Art Gallery Problems
 authors: Sayan Bandyapadhyay; Aniket Basu Roy
-venue: Algorithms and Data Structures
+venue: WADS 2017
 year: 2017
 link: https://doi.org/10.1007/978-3-319-62127-2_5
 status: Published
@@ -614,7 +623,7 @@ status: Published
 
 title: Polynomial Time Algorithms for Bichromatic Problems
 authors: Sayan Bandyapadhyay; Aritra Banik
-venue: Algorithms and Discrete Applied Mathematics
+venue: CALDAM 2017
 year: 2017
 link: https://doi.org/10.1007/978-3-319-53007-9_2
 status: Published

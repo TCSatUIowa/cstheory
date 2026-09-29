@@ -16,13 +16,6 @@ image: /assets/people/jeffrey-keithley.jpg
 
 ---
 
-name: Joshua Z. Sobel
-advisor: Sriram Pemmaraju
-research: Distributed algorithms, sampling and counting
-website: https://joshzsobel.com/
-
----
-
 name: Xiang Liu
 advisor: Kasturi Varadarajan
 research: Computational geometry, relational algorithms, subspace approximation

@@ -10,7 +10,7 @@ speaker: Cristopher Moore · Santa Fe Institute
 
 date: 2026-09-05
 type: Publication
-title: Faster Set Cover in the MPC Model accepted in Theoretical Computer Science
+title: Faster Set Cover in the MPC Model published in Theoretical Computer Science
 link: https://doi.org/10.1016/j.tcs.2026.116238
 authors: Hongyan Ji; Shreyas Pai; Sriram V. Pemmaraju; Joshua Sobel
 

@@ -1,32 +1,34 @@
 ---
 layout: base.njk
-title: Publications
-description: Publications by the University of Iowa CS Theory group.
+title: Older publications
+description: Publications by the University of Iowa CS Theory group from before 2017.
 section: publications
-permalink: /publications.html
+permalink: /older-publications.html
 ---
 <main id="main" class="people-page publications-page">
   <header class="people-heading">
-    <h1>Publications</h1>
+    <div>
+      <a class="group-back" href="./publications.html">← Publications</a>
+      <h1>Older publications</h1>
+    </div>
   </header>
-  <p class="section-note">Publications from 2017–2026.</p>
-  <div class="publication-years" data-year-min="2017">
-    {% for group in publications.recentYears %}
+  <p class="section-note">Publications from before 2017.</p>
+  <div class="publication-years" data-year-max="2016">
+    {% for group in publications.olderYears %}
     <section class="publication-year" aria-labelledby="year-{{ group.year }}">
       <h2 id="year-{{ group.year }}">{{ group.year }}</h2>
       <ul class="publication-list">
-{% for item in group.entries %}
+        {% for item in group.entries %}
         <li class="publication-entry">
           <h3>{% if item.link %}<a href="{{ item.link | escape }}">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</h3>
           <p class="publication-authors">{{ item.authors | escape }}</p>
           <p class="publication-meta">{{ item.venue | escape }}{% if item.status %}<span class="publication-status">{{ item.status | escape }}</span>{% endif %}</p>
         </li>
-{% endfor %}
+        {% endfor %}
       </ul>
     </section>
     {% else %}
-    <p class="empty-events">Publication information will be added soon.</p>
+    <p class="empty-events">No older publications to show.</p>
     {% endfor %}
   </div>
-  <p class="archive-link"><a href="./older-publications.html">Older publications</a></p>
 </main>

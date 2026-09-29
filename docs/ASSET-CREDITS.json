@@ -80,6 +80,60 @@
     "rights": "No explicit reuse license found on profile page. Published by University of Iowa Computer Science."
   },
   {
+    "name": "parth-gor",
+    "file": "src/assets/people/parth-gor.jpg",
+    "source": "User-provided profile photo",
+    "note": "Supplied by the user for Parth Gor's student profile. Optimized to a 1000-pixel-wide JPEG for the website."
+  },
+  {
+    "name": "hankyu-jang",
+    "file": "src/assets/people/hankyu-jang.jpg",
+    "page": "https://cs.uiowa.edu/alumni/profiles#hj",
+    "image": "https://cs.uiowa.edu/sites/cs.uiowa.edu/files/styles/square__1312_x_1312/public/2025-06/HankyuJang-restaurant-square.jpg",
+    "source_alt": "Profile of Hankyu Jang",
+    "rights": "No explicit reuse license found on the alumni profile. Published by University of Iowa Computer Science."
+  },
+  {
+    "name": "shreyas-pai",
+    "file": "src/assets/people/shreyas-pai.jpg",
+    "page": "https://cs.uiowa.edu/people/shreyas-pai",
+    "image": "https://cs.uiowa.edu/sites/cs.uiowa.edu/files/styles/square__768_x_768/public/2021-06/shreyas_pai.jpg",
+    "source_alt": "Shreyas Pai",
+    "rights": "No explicit reuse license found on the profile page. Published by University of Iowa Computer Science."
+  },
+  {
+    "name": "tanmay-inamdar",
+    "file": "src/assets/people/tanmay-inamdar.jpg",
+    "page": "https://cs.uiowa.edu/alumni/profiles#ti",
+    "image": "https://cs.uiowa.edu/sites/cs.uiowa.edu/files/styles/square__1312_x_1312/public/2023-10/TInamdar.jpg",
+    "source_alt": "Tanmay Inamdar portrait - submitted",
+    "rights": "No explicit reuse license found on the alumni profile. Published by University of Iowa Computer Science."
+  },
+  {
+    "name": "sayan-bandyapadhyay",
+    "file": "src/assets/people/sayan-bandyapadhyay.jpg",
+    "page": "https://cs.uiowa.edu/alumni/profiles#saba",
+    "image": "https://cs.uiowa.edu/sites/cs.uiowa.edu/files/styles/square__1312_x_1312/public/2024-10/sayan_bandyapadhyay.jpg",
+    "source_alt": "Sayan Bandyapadhyay portrait",
+    "rights": "No explicit reuse license found on the alumni profile. Published by University of Iowa Computer Science."
+  },
+  {
+    "name": "talal-riaz",
+    "file": "src/assets/people/talal-riaz.png",
+    "page": "https://pisa.cs.uiowa.edu/compepi/?page_id=393",
+    "image": "https://pisa.cs.uiowa.edu/compepi/wp-content/uploads/2019/07/triaz-sm.png",
+    "source_alt": "Talal Riaz",
+    "rights": "No explicit reuse license found on the group page. Published by the University of Iowa Computational Epidemiology group."
+  },
+  {
+    "name": "santanu-bhowmick",
+    "file": "src/assets/people/santanu-bhowmick.jpg",
+    "page": "https://cs.uiowa.edu/alumni/profiles#sabh",
+    "image": "https://cs.uiowa.edu/sites/cs.uiowa.edu/files/styles/square__1312_x_1312/public/2025-05/SantanuBhowmick_profile.jpg",
+    "source_alt": "Santanu Bhowmick portrait - submitted",
+    "rights": "No explicit reuse license found on the alumni profile. Published by University of Iowa Computer Science."
+  },
+  {
     "asset": "src/assets/iowa-favicon.ico",
     "source": "https://cs.uiowa.edu/profiles/custom/sitenow/assets/favicon.ico",
     "credit": "University of Iowa, official block-I favicon",

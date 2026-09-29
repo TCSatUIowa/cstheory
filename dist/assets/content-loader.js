@@ -76,6 +76,17 @@
     .map(parseBlock)
     .filter(Boolean);
 
+  function filterByYear(records, container) {
+    const minimum = Number(container?.dataset.yearMin);
+    const maximum = Number(container?.dataset.yearMax);
+    return records.filter(record => {
+      const year = Number(record.year);
+      if (Number.isFinite(minimum) && year < minimum) return false;
+      if (Number.isFinite(maximum) && year > maximum) return false;
+      return true;
+    });
+  }
+
   function parseTalks(text) {
     return text.split(/^\s*---\s*$/m).flatMap(block => {
       const marker = /^abstract:[ \t]*\r?$/m.exec(block);
@@ -162,7 +173,7 @@
   async function hydratePublications() {
     const container = document.querySelector('.publication-years');
     if (!container) return;
-    const records = parseRecords(await readContent('./content/publications.md'));
+    const records = filterByYear(parseRecords(await readContent('./content/publications.md')), container);
     const sorted = records.map((record, index) => ({ ...record, index }))
       .sort((a, b) => Number(b.year) - Number(a.year) || a.index - b.index);
     const groups = new Map();
@@ -231,8 +242,8 @@
   async function hydratePeople() {
     const facultyList = document.querySelector('.faculty-list');
     const studentList = document.querySelector('.student-list');
-    const alumniList = document.querySelector('.alumni-list');
-    if (!facultyList || !studentList || !alumniList) return;
+    const alumniList = document.querySelector('[data-alumni-list]');
+    if (!facultyList && !studentList && !alumniList) return;
     const [facultyText, studentsText, alumniText] = await Promise.all([
       readContent('./content/people/faculty.md'),
       readContent('./content/people/students.md'),
@@ -240,7 +251,7 @@
     ]);
     const faculty = parseRecords(facultyText).sort(surnameSort);
     const students = parseRecords(studentsText).sort(surnameSort);
-    const alumni = parseRecords(alumniText).map((person, index) => ({ ...person, index }))
+    const alumni = filterByYear(parseRecords(alumniText), alumniList).map((person, index) => ({ ...person, index }))
       .sort((a, b) => (Number(b.year) || -1) - (Number(a.year) || -1) || a.index - b.index);
     const facultyIds = new Map(faculty.map(person => [person.name, slug(person.name)]));
 
@@ -251,7 +262,7 @@
       if (person.research) article.append(node('p', 'faculty-research', person.research));
       return article;
     });
-    facultyList.replaceChildren(...(facultyEntries.length ? facultyEntries : [emptyMessage('Faculty information will be added soon.')]))
+    if (facultyList) facultyList.replaceChildren(...(facultyEntries.length ? facultyEntries : [emptyMessage('Faculty information will be added soon.')]))
 
     const studentEntries = students.map(person => {
       const article = node('article', 'student-entry');
@@ -262,23 +273,35 @@
       article.append(info);
       return article;
     });
-    studentList.replaceChildren(...(studentEntries.length ? studentEntries : [emptyMessage('Current student information will be added soon.')]))
+    if (studentList) studentList.replaceChildren(...(studentEntries.length ? studentEntries : [emptyMessage('Current student information will be added soon.')]))
 
-    const alumniEntries = alumni.map(person => {
-      const article = node('article', 'alumni-entry');
-      const main = node('div', 'alumni-main');
-      const href = safeHref(person.website);
-      const name = node(href ? 'a' : 'span', 'alumni-name', person.name);
-      if (href) name.href = href;
-      main.append(name, node('span', 'alumni-year', person.year || '—'));
-      const advisor = advisorLine(person, facultyIds);
-      advisor.className = 'alumni-advisor';
-      main.append(advisor);
-      article.append(main);
-      if (person.current) article.append(node('p', 'alumni-current', `→ ${person.current}`));
-      return article;
-    });
-    alumniList.replaceChildren(...(alumniEntries.length ? alumniEntries : [emptyMessage('Alumni information will be added soon.')]))
+    if (alumniList) {
+      const alumniEntries = alumni.map(person => {
+        if (alumniList.dataset.layout === 'profiles') {
+          const article = node('article', 'alumni-profile');
+          article.append(personCard(person, 'alumni-card'));
+          const info = node('div', 'person-info');
+          info.append(node('p', 'alumni-profile-year', person.year || '—'), advisorLine(person, facultyIds));
+          if (person.current) info.append(node('p', 'alumni-profile-current', person.current));
+          article.append(info);
+          return article;
+        }
+
+        const article = node('article', 'alumni-entry');
+        const main = node('div', 'alumni-main');
+        const href = safeHref(person.website);
+        const name = node(href ? 'a' : 'span', 'alumni-name', person.name);
+        if (href) name.href = href;
+        main.append(name, node('span', 'alumni-year', person.year || '—'));
+        const advisor = advisorLine(person, facultyIds);
+        advisor.className = 'alumni-advisor';
+        main.append(advisor);
+        article.append(main);
+        if (person.current) article.append(node('p', 'alumni-current', `→ ${person.current}`));
+        return article;
+      });
+      alumniList.replaceChildren(...(alumniEntries.length ? alumniEntries : [emptyMessage('Alumni information will be added soon.')]))
+    }
   }
 
   function semesterForDate(date) {
