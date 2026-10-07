@@ -105,4 +105,6 @@ The image is optional. Recent alumni from 2017 onward appear on the main People 
 
 Meeting details and talks are under [`content/reading-group/`](content/reading-group/). See the [reading-group guide](docs/reading-group.md) for the talk format.
 
+Upcoming talks from the current semester appear automatically on both the homepage and reading-group page. Edit only [`content/reading-group/upcoming.md`](content/reading-group/upcoming.md); the homepage combines these talks with general upcoming events in date order.
+
 For design, layout, navigation, or image changes, contact the website maintainer.

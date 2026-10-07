@@ -19,6 +19,13 @@ export default function (config) {
   config.addGlobalData('people', loadPeople);
   config.addGlobalData('publications', loadPublications);
   config.addGlobalData('readingGroup', loadReadingGroup);
+  config.addGlobalData('homepageUpcomingEvents', async () => {
+    const [events, readingGroup] = await Promise.all([loadEvents(), loadReadingGroup()]);
+    return [
+      ...events.upcoming,
+      ...readingGroup.upcoming.map(talk => ({ ...talk, type: 'Reading group' })),
+    ].sort((a, b) => a.date.localeCompare(b.date));
+  });
   config.addFilter('assetVersion', path => {
     const hash = createHash('sha256').update(readFileSync(new URL(`src/${path}`, import.meta.url))).digest('hex').slice(0, 12);
     return `./${path}?v=${hash}`;

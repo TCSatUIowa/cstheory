@@ -130,14 +130,20 @@
   async function hydrateHomepage() {
     const homepage = document.querySelector('.homepage-activities');
     if (!homepage) return;
-    const [upcomingText, pastText, scheduleText] = await Promise.all([
+    const [upcomingText, pastText, scheduleText, talksText] = await Promise.all([
       readContent('./content/upcoming-events.md'),
       readContent('./content/past-events.md'),
       readContent('./content/reading-group/schedule.md'),
+      readContent('./content/reading-group/upcoming.md'),
     ]);
-    const upcoming = parseRecords(upcomingText);
+    const schedule = parseRecords(scheduleText)[0] || {};
+    const currentSemester = schedule.semester || semesterForDate(new Date().toISOString().slice(0, 10));
+    const readingGroupTalks = parseTalks(talksText)
+      .filter(talk => semesterForDate(talk.date) === currentSemester)
+      .map(talk => ({ ...talk, type: 'Reading group' }));
+    const upcoming = [...parseRecords(upcomingText), ...readingGroupTalks]
+      .sort((a, b) => a.date.localeCompare(b.date));
     const past = parseRecords(pastText);
-    const schedule = parseRecords(scheduleText)[0];
 
     const upcomingList = document.querySelector('#upcoming-events .activity-list');
     const pastList = document.querySelector('#past-events-list');

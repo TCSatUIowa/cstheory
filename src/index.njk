@@ -27,7 +27,7 @@ homepage: true
     <section class="activity-section" id="upcoming-events" aria-labelledby="upcoming-title">
       <h2 class="ruled-heading" id="upcoming-title">Upcoming events</h2>
       <div class="activity-list full">
-        {% for item in events.upcoming %}{% include "activity-row.njk" %}{% else %}<p class="empty-events">No upcoming events are currently scheduled.</p>{% endfor %}
+        {% for item in homepageUpcomingEvents %}{% include "activity-row.njk" %}{% else %}<p class="empty-events">No upcoming events are currently scheduled.</p>{% endfor %}
       </div>
     </section>
     <section class="activity-section" id="recent-events" aria-labelledby="recent-title">
