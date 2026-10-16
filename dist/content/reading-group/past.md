@@ -1,6 +1,13 @@
 # Past reading-group talks
 # Add new entries at the top. Separate talks with --- on its own line.
 
+date: 2026-10-14
+title: Near-Optimal Online Metric Matching on Δ-ary HST
+speaker: Parth Gor
+link: https://arxiv.org/abs/2609.25292
+
+---
+
 date: 2026-10-07
 title: Round and Communication Efficient Graph Coloring
 speaker: Sriram Pemmaraju
